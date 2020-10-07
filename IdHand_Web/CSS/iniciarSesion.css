@@ -1,0 +1,83 @@
+body {
+    background-color: #000000;
+    font-family: sans-serif, Arial;
+    height: 100%;
+}
+
+/*iniciar sesión */
+
+.iniciarSesion {
+    width: 320px;
+    height: 420px;
+    background-color: #FFFFFF;
+    color: #000000;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.iniciarSesion .icono {
+    background-color: #FCFCFC;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #FF0000 ;
+    position: absolute; /* para que se ubique adelante */
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.icono h1 {
+    margin: 0;
+    padding: 0 0 20px; /* tiene pequeño espacio hacia abajo */
+    text-align: center;
+    font-size: 22px;
+}
+
+.iniciarSesion label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block; /* para que se mantenga en una misma linea */
+
+}
+
+.iniciarSesion input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.iniciarSesion input[type="email"], 
+.iniciarSesion input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.iniciarSesion input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #B81C1C;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.iniciarSesion input[type="submit"]:hover{
+    background-color: #E03333;
+}
+
+.iniciarSesion a {
+    text-decoration: none; /* quitar la decoración por defecto */
+    font-size: 14px;
+    line-height: 20px;
+    color: #B81C1C;
+}

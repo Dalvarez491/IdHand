@@ -1,0 +1,35 @@
+SELECT Nombre_A, Correo_A, Contraseña_A FROM tbl_administrador;
+
+SELECT * FROM tbl_usuario;
+
+SELECT Dirrecion_CentroR, Telefono_CentroR FROM tbl_centroremision;
+
+SELECT tbl_usuario.Nombre_U, tbl_usuario.NombreARL_U, tbl_centroremision.Dirrecion_CentroR, tbl_centroremision.Telefono_CentroR 
+FROM tbl_usuario, tbl_centroremision
+WHERE tbl_usuario.Id_CentroR = tbl_centroremision.Id_CentroR;
+
+SELECT tbl_usuario.Nombre_U, tbl_contacto_e.Celular_Contacto_E, tbl_contacto_e.Parentesco_Contacto_E
+FROM tbl_usuario, tbl_contacto_e, tbl_usuario_contacto_e
+WHERE tbl_usuario.Documento_U = tbl_usuario_contacto_e.Documento_U AND tbl_contacto_e.Id_Contacto_E = tbl_usuario_contacto_e.Id_Contacto_E;
+
+SELECT * FROM tbl_administrador_usuario;
+
+SELECT tbl_administrador.Nombre_A, tbl_usuario.Documento_U ,tbl_usuario.Nombre_U, tbl_administrador_usuario.Fecha_Admi
+FROM tbl_administrador, tbl_usuario, tbl_administrador_usuario 
+WHERE tbl_administrador.Id_A = tbl_administrador_usuario.Id_A AND tbl_usuario.Documento_U = tbl_administrador_usuario.Documento_U; 
+
+SELECT * FROM Tbl_Padecimiento ORDER BY Id_Padecimiento, Tipo_Padecimiento;
+
+SELECT Id_Alergia, Nombre_Alergia FROM Tbl_Alergia;
+
+SELECT Id_enfermedad, Nombre_Enfermedad from tbl_enfermedad;
+
+SELECT tbl_usuario.Documento_U, tbl_usuario.Nombre_U, tbl_padecimiento.Tipo_padecimiento
+FROM tbl_usuario, tbl_padecimiento, tbl_usuario_padecimiento
+WHERE tbl_usuario.Documento_U = tbl_usuario_padecimiento.Documento_U;
+
+SELECT * FROM tbl_usuario_contacto_e ORDER BY Fecha_Contacto DESC;
+
+SELECT * FROM Tbl_Usuario WHERE NombreEps_U = 'Sura';
+
+SELECT * FROM Tbl_Usuario WHERE TipoSangre_U = 'O+';

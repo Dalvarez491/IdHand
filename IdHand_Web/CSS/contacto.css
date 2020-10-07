@@ -1,0 +1,79 @@
+body {
+    background-color:  #FFFFFF;
+    font-family: sans-serif, Arial;
+}
+
+
+/* Contacto */
+
+#fondoLogo {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+
+#centrarLogo {
+    text-align: center;
+}
+p img {
+    width: 200px;
+    height: 200px;
+}
+
+.interlineado {
+    line-height : 50px;
+}
+
+input {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 6px;
+}
+
+textarea{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #AD1C1C;
+}
+
+.boton {
+    background-color: #AD1C1C;
+    border: 2px solid #941919;
+    width: 210px;
+    height: 50px;
+    border-radius: 300px;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #D62424;
+    border: 2px solid #BF2828;
+}
+
+#conteForm {
+    text-align: center;
+    float: left;
+    width: 25%;
+    height: 25%;
+    padding: 100px;
+}
+
+#contacto {
+    text-align: left;
+    float: right;
+    width: 25%;
+    height: 25%;
+    padding: 100px;
+}
+
+.espacio {
+    padding: 9px;
+}
+
+a img {
+    width: 20px;
+    height: 20px;
+}
+
+

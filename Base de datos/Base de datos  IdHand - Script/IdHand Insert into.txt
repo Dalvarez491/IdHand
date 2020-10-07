@@ -1,0 +1,74 @@
+USE IdHand;
+
+/* Insertamos datos en la tabla Tbl_Administrador */
+INSERT INTO Tbl_Administrador (Nombre_A, Correo_A, Contraseña_A) VALUES ('Daniela Alvarez', 'danielavargas20-02@outlook.com', '12345678');
+INSERT INTO Tbl_Administrador (Nombre_A, Correo_A, Contraseña_A) VALUES ('Wendy Vergara', 'vwendy615@gmail.com', '567890123');
+INSERT INTO Tbl_Administrador (Nombre_A, Correo_A, Contraseña_A) VALUES ('Brayan gonzalez', 'estivenbgonza18@gmail.com', '09876543');
+INSERT INTO Tbl_Administrador (Nombre_A, Correo_A, Contraseña_A) VALUES ('Miguel perez', 'MiguelPerez@gmail.com', '654321098');
+INSERT INTO Tbl_Administrador (Nombre_A, Correo_A, Contraseña_A) VALUES ('Lucia Florez', 'Lucia123@gmail.com', '76543789');
+
+/* Insertamos datos en la tabla Tbl_Usuario */
+INSERT INTO Tbl_Usuario (Documento_U, Correo_U, Nombre_U, Contraseña_U, TipoSangre_U, NombreEps_U, NombreARL_U, Id_CentroR) 
+VALUES ('123456789', 'JesusOcampo@gmail.com', 'Jesus Ocampo', '12345', 'O+','Nueva EPS', 'Nueva EPS', 1);
+INSERT INTO Tbl_Usuario (Documento_U, Correo_U, Nombre_U, Contraseña_U, TipoSangre_U, NombreEps_U, NombreARL_U, Id_CentroR) 
+VALUES ('234432123', 'Roberto@gmail.com', 'Roberto Estrada', '23456', 'AB+','SURA', 'SURA', 2);
+INSERT INTO Tbl_Usuario (Documento_U, Correo_U, Nombre_U, Contraseña_U, TipoSangre_U, NombreEps_U, NombreARL_U, Id_CentroR) 
+VALUES ('345678765', 'Maria@gmail.com', 'Maria Isabel Osorio', '34567', 'AB+','Nueva EPS', 'SURA', 3);
+INSERT INTO Tbl_Usuario (Documento_U, Correo_U, Nombre_U, Contraseña_U, TipoSangre_U, NombreEps_U, NombreARL_U, Id_CentroR) 
+VALUES ('456789012', 'Emilio@gmail.com', 'Emilio Castañeda', '45678', 'O-','SURA', 'Nueva EPS', 4);
+INSERT INTO Tbl_Usuario (Documento_U, Correo_U, Nombre_U, Contraseña_U, TipoSangre_U, NombreEps_U, NombreARL_U, Id_CentroR) 
+VALUES ('567890123', 'Ana@gmail.com', 'Ana Byron', '56789', 'A+','SURA', 'SURA', 5);
+
+/* Insertamos datos en la tabla Tbl_CentroRemision */
+INSERT INTO Tbl_CentroRemision (Dirrecion_CentroR, Telefono_CentroR) VALUES ('Carrera 85K No. 46A-66', '4193000');
+INSERT INTO Tbl_CentroRemision (Dirrecion_CentroR, Telefono_CentroR) VALUES ('Cra.43 #30-28', '4484772');
+INSERT INTO Tbl_CentroRemision (Dirrecion_CentroR, Telefono_CentroR) VALUES ('Carrera 82C #30a116', '3607080');
+INSERT INTO Tbl_CentroRemision (Dirrecion_CentroR, Telefono_CentroR) VALUES ('Cra.46 #47-66', '4193000');
+INSERT INTO Tbl_CentroRemision (Dirrecion_CentroR, Telefono_CentroR) VALUES ('Av. Colombia #69145', '317 5148037');
+
+/* Insertamos datos en la tabla Tbl_Administrador_Usuario */
+INSERT INTO Tbl_Administrador_Usuario (Id_A, Documento_U, Nombre_A, Fecha_Admi) VALUES (1, '123456789', 'Daniela Alvarez', '2017-09-10');
+INSERT INTO Tbl_Administrador_Usuario (Id_A, Documento_U, Nombre_A, Fecha_Admi) VALUES (1, '234432123', 'Daniela Alvarez', '2018-09-10');
+INSERT INTO Tbl_Administrador_Usuario (Id_A, Documento_U, Nombre_A, Fecha_Admi) VALUES (2, '345678765', 'Wendy Vergara', '2017-09-11');
+INSERT INTO Tbl_Administrador_Usuario (Id_A, Documento_U, Nombre_A, Fecha_Admi) VALUES (3, '456789012', 'Brayan gonzalez', '2019-04-12');
+INSERT INTO Tbl_Administrador_Usuario (Id_A, Documento_U, Nombre_A, Fecha_Admi) VALUES (5, '567890123', 'Lucia Florez', '2020-07-06');
+
+/* Insertamos datos en la tabla Tbl_contacto_E */
+INSERT INTO Tbl_contacto_E (Celular_Contacto_E, Parentesco_Contacto_E ) VALUES ('3251148956', 'Madre');
+INSERT INTO Tbl_contacto_E (Celular_Contacto_E, Parentesco_Contacto_E ) VALUES ('3008521436', 'Hijo');
+INSERT INTO Tbl_contacto_E (Celular_Contacto_E, Parentesco_Contacto_E ) VALUES ('3142574103', 'Esposa');
+INSERT INTO Tbl_contacto_E (Celular_Contacto_E, Parentesco_Contacto_E ) VALUES ('3003621145', 'Esposo');
+INSERT INTO Tbl_contacto_E (Celular_Contacto_E, Parentesco_Contacto_E ) VALUES ('3012554789', 'Tía');
+
+/* Insertamos datos en la tabla Tbl_Usuario_Contacto_E */
+INSERT INTO Tbl_Usuario_Contacto_E (Documento_U, Id_Contacto_E, Fecha_Contacto) VALUES ('123456789', 1, '2002-09-10');
+INSERT INTO Tbl_Usuario_Contacto_E (Documento_U, Id_Contacto_E, Fecha_Contacto) VALUES ('234432123', 2, '2020-12-20');
+INSERT INTO Tbl_Usuario_Contacto_E (Documento_U, Id_Contacto_E, Fecha_Contacto) VALUES ('345678765', 3, '2019-06-11');
+INSERT INTO Tbl_Usuario_Contacto_E (Documento_U, Id_Contacto_E, Fecha_Contacto) VALUES ('456789012', 4, '2014-10-31');
+INSERT INTO Tbl_Usuario_Contacto_E (Documento_U, Id_Contacto_E, Fecha_Contacto) VALUES ('567890123', 5, '2020-02-01');
+
+/* Insertamos datos en la tabla Tbl_padecimiento */
+INSERT INTO Tbl_padecimiento (Tipo_padecimiento) VALUES ('Enfermedad');
+INSERT INTO Tbl_padecimiento (Tipo_padecimiento) VALUES ('Alergia');
+
+/* Insertamos datos en la tabla Tbl_Usuario_Padecimiento */
+INSERT INTO Tbl_Usuario_Padecimiento (Documento_U, Id_Padecimiento, Fecha_Padecimiento) VALUES ('123456789', 1, '2017-09-10');
+INSERT INTO Tbl_Usuario_Padecimiento (Documento_U, Id_Padecimiento, Fecha_Padecimiento) VALUES ('123456789', 2, '2017-09-10');
+INSERT INTO Tbl_Usuario_Padecimiento (Documento_U, Id_Padecimiento, Fecha_Padecimiento) VALUES ('234432123', 2, '2019-10-12');
+INSERT INTO Tbl_Usuario_Padecimiento (Documento_U, Id_Padecimiento, Fecha_Padecimiento) VALUES ('345678765', 2, '2015-07-30');
+INSERT INTO Tbl_Usuario_Padecimiento (Documento_U, Id_Padecimiento, Fecha_Padecimiento) VALUES ('456789012', 2, '2020-09-10');
+INSERT INTO Tbl_Usuario_Padecimiento (Documento_U, Id_Padecimiento, Fecha_Padecimiento) VALUES ('567890123', 1, '2020-01-05');
+
+/* Insertamos datos en la tabla  Tbl_Enfermedad*/
+INSERT INTO Tbl_Enfermedad (Nombre_Enfermedad, Id_Padecimiento) VALUES ('Diabetes', 1);
+INSERT INTO Tbl_Enfermedad (Nombre_Enfermedad, Id_Padecimiento) VALUES ('Hipertensión Arterial', 1);
+INSERT INTO Tbl_Enfermedad (Nombre_Enfermedad, Id_Padecimiento) VALUES ('Asma', 1);
+INSERT INTO Tbl_Enfermedad (Nombre_Enfermedad, Id_Padecimiento) VALUES ('Neumonia', 1);
+INSERT INTO Tbl_Enfermedad (Nombre_Enfermedad, Id_Padecimiento) VALUES ('Colesterol', 1);
+
+/* Insertamos datos en la tabla Tbl_Alergia */
+INSERT INTO Tbl_Alergia (Nombre_Alergia, Id_Padecimiento) VALUES ('Leche', 2);
+INSERT INTO Tbl_Alergia (Nombre_Alergia, Id_Padecimiento) VALUES ('Acetaminofen', 2);
+INSERT INTO Tbl_Alergia ( Nombre_Alergia, Id_Padecimiento) VALUES ('Piña', 2);
+INSERT INTO Tbl_Alergia (Nombre_Alergia, Id_Padecimiento) VALUES ('Huevos', 2);
+INSERT INTO Tbl_Alergia (Nombre_Alergia, Id_Padecimiento) VALUES ('Papaya', 2);

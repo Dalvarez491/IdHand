@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon"   href="Imagenes/icono.png"/>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/iniciarSesion.css">
+    <title>IdHand - Iniciar sesión</title>
+    <script type="text/javascript" src="JS/validacion.js"></script>
+</head>
+<body>
+
+<header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <div class="iniciarSesion">
+        <img src="Imagenes/icono.png" alt="Logo" class="icono">
+
+        <center><h1>Iniciar sesión</h1><br></center>
+
+        <!-- inicio de sesión del administrador-->
+
+    <form method="post" action="PHP/iniciarSesion.php">
+
+        <label>Correo</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese el correo"> 
+
+        <label>Contraseña</label>
+        <input type="password" name="clave" id="clave" placeholder="Ingrese la contraseña">  
+
+        <center><a href="#" class="centrar">¿Olvidaste tu contraseña? </a></center> <br><br>
+
+        <input type="submit" value="Iniciar sesión" onclick="return validar()">
+
+    </form>
+
+
+    </div>
+
+    
+</body>
+</html>

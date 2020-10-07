@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Administrador</title>
+    <link rel="stylesheet" type="text/css" href="CSS/crearAdmin.css">
+    <link rel="stylesheet" type="text/css" href="CSS/menu2.css">
+    <script type="text/javascript" src="JS/validacionCrearAdmin.js"></script>
+</head>
+
+<header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="contenedor">
+        <div class="img">
+            <img src="imagenes/icono.png">
+            </div>
+            <div class="registro">
+                <form method="post" action="PHP/registrarAdministrador.php">
+                    <img class="avatar" src="imagenes/avatar.svg">
+                    <h2>Registar Administrador</h2>
+                    <div class="input-div uno">
+                        <div class="i">
+                        </i></i>
+                        </div>
+                        <div>
+                            <h5>Nombre</h5>
+                            <input name="nombre" class="input" id="nombre" type="text">
+                        </div>
+                    </div>
+                    <div class="input-div dos">
+                        <div class="i">
+                        
+                        </div>
+                        <div>
+                            <h5>Correo</h5>
+                             <input name="correo" class="input" id="correo" type="email">
+                        </div>
+                    </div>
+                    <div class="input-div tres">
+                        <div class="i">
+                        </i></i>
+                        </div>
+                        <div>
+                            <h5>Contraseña</h5>
+                            <input name="clave" class="input" id="clave" type="password">
+                        </div>
+                    </div>
+                            <input type="submit" class="btn" value="Registrar" onclick="return validar()">
+                </form>
+            </div>
+
+            <script type="text/javascript" src="JS/crearAdmin.js"></script>
+            
+</body>
+</html>
